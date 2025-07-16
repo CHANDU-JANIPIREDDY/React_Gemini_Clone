@@ -24,7 +24,7 @@ const ContextProvider = (props) => {
 
   const runChat = async (prompt) => {
     try {
-      const res = await fetch("http://localhost:8000/ask", {
+      const res = await fetch("https://gemini-clone-backend-xmdr.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),

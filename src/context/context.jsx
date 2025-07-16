@@ -24,7 +24,7 @@ const ContextProvider = (props) => {
 
   const runChat = async (prompt) => {
     try {
-      const res = await fetch("https://gemini-clone-backend-xmdr.onrender.com", {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),

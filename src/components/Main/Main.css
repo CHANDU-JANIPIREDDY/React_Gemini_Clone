@@ -158,7 +158,7 @@
 }
 @media(max-width:600px){
     .cards {
-        margin-bottom: 140px;
+        margin-bottom: 100px;
     }
     .main-bottom {
         position: absolute;
